@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "sources": {
+    "AFCD Release 3": "AFCD Release 3 - Nutrient profiles.xlsx + Food Details.xlsx",
+    "AUSNUT 2023": "AUSNUT 2023 - All Files_0.zip / Food nutrient profiles.xlsx + Food details.xlsx + Food measures.xlsx"
+  },
+  "food_counts": {
+    "afcd_r3": 1588,
+    "ausnut_2023": 3741,
+    "total": 5329
+  },
+  "portion_counts": {
+    "ausnut_2023": 9816,
+    "afcd_r3": 0,
+    "ausnut_foods_with_portions": 3713
+  },
+  "pilot_crosscheck": {
+    "pilot_foods": 30,
+    "nutrient_fields_per_food": 9,
+    "discrepancies": [],
+    "matched_nutrient_comparisons": 270
+  },
+  "duplicate_food_ids": 0,
+  "duplicate_measure_ids": 0,
+  "orphan_measures": 0,
+  "invalid_measure_weights": 0,
+  "missing_nutrient_values": {
+    "energy_kj": 0,
+    "protein_g": 0,
+    "total_fat_g": 0,
+    "carbohydrate_g": 0,
+    "fiber_g": 0,
+    "sodium_mg": 0,
+    "saturated_fat_g": 0,
+    "total_sugars_g": 0,
+    "potassium_mg": 0
+  },
+  "derivation_counts": {
+    "Borrowed": 236,
+    "Analysed": 2097,
+    "Imputed": 154,
+    "Recipe": 2417,
+    "Estimated": 30,
+    "Label Data": 395
+  },
+  "meal_planning_eligible_count": 0,
+  "eligibility_note": "Conservative default: no newly imported food is auto-approved for meal planning. Eligibility requires separately validated preparation and safety policy; the existing pilot retains its own reviewed state in the app.",
+  "carbohydrate_definition": "Available carbohydrate without sugar alcohols (g), not USDA carbohydrate by difference.",
+  "conversion": "energy_kcal = energy_kj / 4.184; energy_kj is the original source field",
+  "warnings": [
+    "Food state and allergens cannot be conclusively inferred from food names; left unverified.",
+    "AUSNUT measures include density and other technical measures; not all are user-friendly household portions.",
+    "AUSNUT survey foods can share public food keys with AFCD; do not deduplicate across datasets by public key.",
+    "Importer must use exact case-sensitive food_id prefixes AFCD_R3: and AUSNUT_2023:."
+  ],
+  "errors": []
+}
