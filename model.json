@@ -1,0 +1,40 @@
+{
+  "features": [
+    "RIDAGEYR",
+    "BMXBMI",
+    "BMXWAIST"
+  ],
+  "mean": [
+    50.567790777701305,
+    28.9794562973159,
+    98.60137646249139
+  ],
+  "scale": [
+    18.302790369559542,
+    6.85495042535823,
+    16.535243539292043
+  ],
+  "coefficients": [
+    0.8437448202648424,
+    0.2652225317090745,
+    0.24820180702820577
+  ],
+  "intercept": -1.0764703433531113,
+  "referral_threshold": 0.2139604304297667,
+  "training_ranges": {
+    "RIDAGEYR": [
+      18.0,
+      80.0
+    ],
+    "BMXBMI": [
+      14.1,
+      69.9
+    ],
+    "BMXWAIST": [
+      60.0,
+      187.0
+    ]
+  },
+  "outcome": "Measured HbA1c >=5.7%, not diagnosis or future onset",
+  "version": "educational-baseline-1"
+}

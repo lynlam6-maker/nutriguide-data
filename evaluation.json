@@ -1,0 +1,181 @@
+{
+  "cohort": {
+    "complete_eligible_records": 4844
+  },
+  "split": {
+    "train": 2906,
+    "validation": 969,
+    "test": 969
+  },
+  "target": "Measured HbA1c >=5.7%, not diagnosis or future onset",
+  "threshold": 0.2139604304297667,
+  "threshold_selection": "Highest validation threshold meeting weighted sensitivity >=0.80; exploratory only",
+  "test_weighted": {
+    "n": 969,
+    "positives": 285,
+    "roc_auc": 0.7104890892733482,
+    "average_precision": 0.44322022433593533,
+    "brier": 0.17531613339687335,
+    "sensitivity": 0.7306663987849853,
+    "specificity": 0.5821699183983934,
+    "false_positive_rate": 0.41783008160160656,
+    "false_negative_rate": 0.2693336012150146
+  },
+  "test_unweighted": {
+    "n": 969,
+    "positives": 285,
+    "roc_auc": 0.7053554939981532,
+    "average_precision": 0.44956070751868776,
+    "brier": 0.18857261148149806,
+    "sensitivity": 0.8210526315789474,
+    "specificity": 0.4678362573099415,
+    "false_positive_rate": 0.5321637426900585,
+    "false_negative_rate": 0.17894736842105263
+  },
+  "baseline_brier_weighted": 0.19468866643540847,
+  "groups": [
+    {
+      "field": "RIAGENDR",
+      "code": 1.0,
+      "n": 436,
+      "positives": 124,
+      "roc_auc": 0.6922593509819996,
+      "average_precision": 0.44128455218208607,
+      "brier": 0.17833528631546972,
+      "sensitivity": 0.6800451695221024,
+      "specificity": 0.5987388377707136,
+      "false_positive_rate": 0.40126116222928654,
+      "false_negative_rate": 0.31995483047789763
+    },
+    {
+      "field": "RIAGENDR",
+      "code": 2.0,
+      "n": 533,
+      "positives": 161,
+      "roc_auc": 0.7269933469614643,
+      "average_precision": 0.4520767596366868,
+      "brier": 0.17250102242632906,
+      "sensitivity": 0.7779716409424952,
+      "specificity": 0.5667331327541949,
+      "false_positive_rate": 0.43326686724580504,
+      "false_negative_rate": 0.22202835905750481
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 1.0,
+      "n": 65,
+      "positives": 24,
+      "roc_auc": 0.8051096146625167,
+      "average_precision": 0.6783250304627744,
+      "brier": 0.17309683476491813,
+      "sensitivity": 0.6454833050652115,
+      "specificity": 0.7365973857117335,
+      "false_positive_rate": 0.26340261428826656,
+      "false_negative_rate": 0.3545166949347885
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 2.0,
+      "n": 91,
+      "positives": 24,
+      "roc_auc": 0.764764379921349,
+      "average_precision": 0.46176263690079666,
+      "brier": 0.14084123693236184,
+      "sensitivity": 0.6330805045351894,
+      "specificity": 0.7899415479962643,
+      "false_positive_rate": 0.21005845200373563,
+      "false_negative_rate": 0.3669194954648106
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 3.0,
+      "n": 624,
+      "positives": 165,
+      "roc_auc": 0.7525539509745414,
+      "average_precision": 0.4407238398123069,
+      "brier": 0.1589184767755571,
+      "sensitivity": 0.8417013862485555,
+      "specificity": 0.5318446015910274,
+      "false_positive_rate": 0.4681553984089726,
+      "false_negative_rate": 0.15829861375144447
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 4.0,
+      "n": 92,
+      "positives": 41,
+      "roc_auc": 0.5723127175360164,
+      "average_precision": 0.5877480571454466,
+      "brier": 0.30353894860694036,
+      "sensitivity": 0.5132637649340626,
+      "specificity": 0.5110189999016981,
+      "false_positive_rate": 0.48898100009830187,
+      "false_negative_rate": 0.4867362350659374
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 6.0,
+      "n": 47,
+      "positives": 16,
+      "roc_auc": 0.7027479495841713,
+      "average_precision": 0.46702440110174104,
+      "brier": 0.21909287056103421,
+      "sensitivity": 0.48362282372349713,
+      "specificity": 0.7866901556574715,
+      "false_positive_rate": 0.21330984434252853,
+      "false_negative_rate": 0.5163771762765029
+    },
+    {
+      "field": "RIDRETH3",
+      "code": 7.0,
+      "n": 50,
+      "positives": 15,
+      "roc_auc": 0.6472928039847519,
+      "average_precision": 0.5227814439430911,
+      "brier": 0.20064659732661763,
+      "sensitivity": 0.6050166957251993,
+      "specificity": 0.5711051066119219,
+      "false_positive_rate": 0.428894893388078,
+      "false_negative_rate": 0.3949833042748006
+    },
+    {
+      "field": "age",
+      "group": "18\u201339",
+      "n": 307,
+      "positives": 39,
+      "roc_auc": 0.5671340494325634,
+      "average_precision": 0.25357522895966444,
+      "brier": 0.11233072754271321,
+      "sensitivity": 0.23188383313785316,
+      "specificity": 0.9078366302502966,
+      "false_positive_rate": 0.0921633697497034,
+      "false_negative_rate": 0.7681161668621468
+    },
+    {
+      "field": "age",
+      "group": "40\u201359",
+      "n": 283,
+      "positives": 91,
+      "roc_auc": 0.6563226657623262,
+      "average_precision": 0.45797018733111566,
+      "brier": 0.20567322454331002,
+      "sensitivity": 0.7302138240818152,
+      "specificity": 0.43723911486128486,
+      "false_positive_rate": 0.562760885138715,
+      "false_negative_rate": 0.2697861759181848
+    },
+    {
+      "field": "age",
+      "group": "60+",
+      "n": 379,
+      "positives": 155,
+      "roc_auc": 0.6094662589211406,
+      "average_precision": 0.49358698891437397,
+      "brier": 0.23979215118383268,
+      "sensitivity": 0.9912675087020746,
+      "specificity": 0.003497033695476401,
+      "false_positive_rate": 0.9965029663045237,
+      "false_negative_rate": 0.008732491297925308
+    }
+  ]
+}
